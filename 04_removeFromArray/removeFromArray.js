@@ -12,7 +12,7 @@ const removeFromArray = function(gArr, ...others) {
         }
     }
 
-    console.log(gArr)
+    // console.log(gArr)
     return gArr
 };
 
