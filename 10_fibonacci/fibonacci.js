@@ -1,13 +1,17 @@
 const fibonacci = function(numOf) {
-    if (numOf === 0) {
+    if (numOf == 0) {
         return 0
     }
 
-    if (numOf === 1) {
+    if (numOf == 1) {
         return 1
     }
 
-    return fibonacci(numOf - 2) + fibonacci(numOf - 1)
+    if (numOf < 0) {
+        return 'OOPS'
+    }
+
+    return fibonacci(parseInt(numOf) - 2) + fibonacci(parseInt(numOf) - 1)
 };
 
 console.log(fibonacci(6))
